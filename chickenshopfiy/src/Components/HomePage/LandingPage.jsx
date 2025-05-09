@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../Navbar'
-import chickenfries from 'src/assets/chickenlandingpage.jpeg';
+import chickenfries from '/src/assets/chickenlandingpage.jpeg';
 
 const LandingPage = () => {
   return (
