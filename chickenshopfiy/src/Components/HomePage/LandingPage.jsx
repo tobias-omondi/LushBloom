@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../../Navbar'
+import chickenfries from 'src/assets/chickenlandingpage.jpeg';
 
 const LandingPage = () => {
   return (
     <div>
       <div className='relative w-screen '>
-        <img src='src/assets/chickenlandingpage.jpeg' alt='chicken fried' className='w-full brightness-75 object-cover' />
+        <img src={chickenfries} alt='chicken fried' className='w-full brightness-75 object-cover' />
       </div>
       <div className='z-20 absolute top-1/4 mx-auto'>
       <Navbar />
