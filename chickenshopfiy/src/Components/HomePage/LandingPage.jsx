@@ -24,7 +24,7 @@ const LandingPage = () => {
         <h4 className='text-4xl font-bold mt-5'>
           For Chicken Livers <br /> Only
         </h4>
-        <button type='submit' className='bg-black opacity-75 text-white rounded-2xl p-4 mt-10'>Shop Today</button>
+        <button type='submit' className='bg-black opacity-75 text-white rounded p-3 mt-10 border-orange-600 cursor-pointer px-6 py-3'>Shop Today</button>
       </div>
     </div>
   );
