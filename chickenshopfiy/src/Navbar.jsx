@@ -4,7 +4,7 @@ import { IoMdCart } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-end p-7 bg-transparent'>
+    <nav className='flex justify-end p-7 bg-transparent '>
       <ul className='list-none flex flex-row justify-center gap-12 text-white font-bold'>
         <li>
           <Link to="/">Home</Link>
