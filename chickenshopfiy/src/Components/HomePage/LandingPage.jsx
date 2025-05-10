@@ -23,7 +23,7 @@ const LandingPage = () => {
       <div className='absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 z-20 text-start text-white'>
         <h1 className='text-7xl font-extrabold mt-28'>CHICKEN SHOPIFY</h1>
         <h4 className='text-4xl font-bold mt-5'>
-          For Chicken Livers <br /> Only
+          For Chicken Lovers <br /> Only
         </h4>
         <button type='submit' className='bg-black opacity-75 text-white rounded p-3 mt-10 border-orange-600 cursor-pointer px-6 py-3'>Shop Today</button>
       </div>
