@@ -6,7 +6,7 @@ import '../../App.css'
 const LandingPage = () => {
   return (
     <>
-    <div className='w-full h-screen'>
+    <div className=' relative w-full h-screen -mt-24 md:-mt-20'>
       {/* Background Image */}
       <img
         src={chickenfries}
@@ -15,7 +15,7 @@ const LandingPage = () => {
       />
 
       {/* Navbar on top */}
-      <div className='absolute top-0 left-0 w-full z-20'>
+      <div className='absolute top-4 md:top-0 left-0 w-full z-20'>
         <Navbar />
       </div>
 
