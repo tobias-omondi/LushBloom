@@ -20,7 +20,7 @@ const LandingPage = () => {
       </div>
 
       {/* Page Content Centered */}
-      <div className='absolute top-1/2 left-1/2 md:left-1/3 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center md:text-start text-white'>
+      <div className='absolute top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 z-20 text-center  text-white'>
         <h1 className='text-5xl md:text-7xl font-extrabold mt-28'>CHICKEN SHOPIFY</h1>
         <h4 className='text-2xl md:text-4xl font-bold mt-5'>
           For Chicken Lovers <br /> Only
