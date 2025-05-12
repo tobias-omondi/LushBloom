@@ -6,7 +6,7 @@ import '../../App.css'
 const LandingPage = () => {
   return (
     <>
-    <div className='relative w-full h-screen -mt-20'>
+    <div className='w-full h-screen'>
       {/* Background Image */}
       <img
         src={chickenfries}
