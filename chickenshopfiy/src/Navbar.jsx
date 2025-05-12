@@ -34,7 +34,7 @@ const Navbar = () => {
       {/* mobile dropdown menu */}
 
       {menuOpen && (
-        <ul className='flex flex-col gap-6 text-white bg-black bg-opacity-80 mt-4 p-4 rounded md-hidden'>
+        <ul className='flex flex-col gap-6 w-screen text-white bg-black  mt-4 p-4 rounded md-hidden'>
           <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
           <li><Link to="/vendor-store" onClick={toggleMenu}>Vendor Store</Link></li>
           <li><Link to="/help" onClick={toggleMenu}>Help</Link></li>
