@@ -2,6 +2,7 @@ import React from 'react';
 import chickenfries from '/src/assets/bites chicken.jpg';
 import Navbar from '../../Navbar';
 import '../../App.css'
+import LandingSales from './LandingSales';
 
 const LandingPage = () => {
   return (
@@ -28,8 +29,8 @@ const LandingPage = () => {
         <button type='submit' className='bg-black opacity-75 text-white rounded p-3 mt-10 border-orange-600 cursor-pointer px-6 py-3'>Shop Today</button>
       </div>
     </div>
-    <div>
-        ivkevwoevjo
+    <div className='absolute top-11/12 w-full z-10'>
+        <LandingSales />
       </div>
     </>
   );
