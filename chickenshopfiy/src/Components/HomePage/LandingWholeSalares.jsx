@@ -69,9 +69,9 @@ const LandingWholeSalares = ({ Title, Description }) => {
                 alt={`slide-${index}`}
                 className="w-full h-[400px] object-cover rounded transition-all duration-1000"
               />
-              <div className='text-center bg-green-950 h-auto py-5 mt-3'>
+              <div className='text-center bg-green-950 py-3 mt-3 rounded'>
                 <h2 className="text-white text-3xl font-semibold mt-5">{item.title}</h2>
-                <p className="text-gray-300 text-center mt-2 max-w-5/6 mx-auto">{item.description}</p>
+                <p className="text-gray-300 text-center mt-2 max-w-4/5 mx-auto">{item.description}</p>
                </div>
             </SwiperSlide>
           ))}
