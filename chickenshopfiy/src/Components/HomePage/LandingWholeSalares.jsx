@@ -37,10 +37,10 @@ const wholeSaleImages = [
 
 const LandingWholeSalares = ({ Title, Description }) => {
   return (
-    <div className="bg-black py-10 px-4">
+    <div className="py-10 px-4">
       <div>
-        <h1 className="text-gray-200 text-3xl md:text-5xl py-2 md:py-5 font-bold"> {Title} </h1>
-        <h3 className="text-gray-400 py-4 md:py-3 text-xl md:text-4xl"> {Description} </h3>
+        <h1 className="text-gray-700 text-3xl md:text-5xl py-2 md:py-5 font-bold"> {Title} </h1>
+        <h3 className="text-gray-900 py-4 md:py-3 text-xl md:text-4xl"> {Description} </h3>
       </div>
 
       <div className="max-w-6xl mx-auto mt-10">
