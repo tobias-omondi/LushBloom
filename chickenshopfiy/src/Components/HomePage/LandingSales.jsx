@@ -1,8 +1,8 @@
 import React, { Children } from 'react'
-import sellchicken1 from '/src/assets/makeup2.jpeg'
-import sellchicken2 from '/src/assets/makeup.jpeg'
-import sellchicken3 from '/src/assets/makeup1.jpeg'
-import LandingWholeSalares from './LandingWholeSalares'
+import beauty1 from '/src/assets/makeup2.jpeg'
+import beauty2 from '/src/assets/makeup.jpeg'
+import beauty3 from '/src/assets/makeup1.jpeg'
+// import LandingWholeSalares from './LandingWholeSalares'
 
 const LandingSales = ({Title, Description}) => {
   return (
@@ -14,14 +14,14 @@ const LandingSales = ({Title, Description}) => {
 
       <div className='flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 object-cover'>
         <div className='w-full md:w-2/5 max-w-[500px] h-[300px] md:h-[400px]'>
-          <img src={sellchicken1} alt='chicken dish'  className='w-full h-full rounded-lg object-cover shadow-lg'/>
+          <img src={beauty1} alt='chicken dish'  className='w-full h-full rounded-lg object-cover shadow-lg'/>
         </div>
         <div className='w-4/5 md:w-2/5 max-w-[300px] h-[300px] md:h-[400px]'>
-          <img  src={sellchicken2}  alt='chicken biryani'  className='w-full h-full rounded-lg object-cover shadow-lg'/>
+          <img  src={beauty2}  alt='chicken biryani'  className='w-full h-full rounded-lg object-cover shadow-lg'/>
         </div>
         
         <div className='w-full md:w-2/5 max-w-[500px] h-[300px] md:h-[400px]'>
-          <img  src={sellchicken3}  alt='chicken wings'  className='w-full h-full rounded-lg object-cover shadow-lg' />
+          <img  src={beauty3}  alt='chicken wings'  className='w-full h-full rounded-lg object-cover shadow-lg' />
         </div>
       </div>
       {/* <LandingWholeSalares Title = "Direct & WholeSales" Description = "Win Loyal Chicken Customers." /> */}

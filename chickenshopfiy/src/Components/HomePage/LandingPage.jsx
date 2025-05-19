@@ -26,7 +26,7 @@ const LandingPage = () => {
         <h4 className='text-2xl md:text-4xl font-bold mt-5'>
           For Beauty Lovers <br /> Only
         </h4>
-        <button type='submit' className='bg-black opacity-75 text-white rounded p-3 mt-10 border-orange-600 cursor-pointer px-6 py-3'>Shop Today</button>
+        <button type='submit' className='bg-orange-700 opacity-75 text-white rounded p-3 mt-10 border-orange-600 cursor-pointer px-6 py-3'>Shop Today</button>
       </div>
     </div>
     <div className='w-full z-10'>
