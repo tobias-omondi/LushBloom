@@ -29,7 +29,7 @@ const LandingPage = () => {
         <button type='submit' className='bg-black opacity-75 text-white rounded p-3 mt-10 border-orange-600 cursor-pointer px-6 py-3'>Shop Today</button>
       </div>
     </div>
-    <div className='absolute top-11/12 w-full z-10'>
+    <div className='w-full z-10'>
         <LandingSales />
       </div>
     </>
