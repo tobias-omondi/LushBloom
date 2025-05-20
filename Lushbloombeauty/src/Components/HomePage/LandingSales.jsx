@@ -55,11 +55,11 @@ const LandingSales = ({ Title, Description }) => {
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 3000,
+          delay: 10000,
           disableOnInteraction: false,
         }}
         spaceBetween={20}
-        slidesPerView={1} // Default for mobile
+        slidesPerView={1} 
         loop={true}
         className='mySwipe w-fullr'
         breakpoints={{
