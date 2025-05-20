@@ -10,6 +10,7 @@ import {Pagination, Autoplay } from 'swiper/modules';
 import beauty1 from '/src/assets/makeup2.jpeg'; 
 import beauty2 from '/src/assets/makeup.jpeg';
 import beauty3 from '/src/assets/makeup1.jpeg';
+import SectionTwo from './SectionTwo';
 
 gsap.registerPlugin(TextPlugin, SlowMo);
 
@@ -28,7 +29,9 @@ const LandingSales = ({ Title, Description }) => {
   }, []);
 
   return (
+ 
     <div className='bg-orange-500 w-full p-4 md:p-10'>
+      <div>
       <div>
         <h1
           ref={headlineRef}
@@ -92,7 +95,10 @@ const LandingSales = ({ Title, Description }) => {
         </SwiperSlide>
         
       </Swiper>
+      </div>
+      <SectionTwo />
     </div>
+   
   );
 };
 
