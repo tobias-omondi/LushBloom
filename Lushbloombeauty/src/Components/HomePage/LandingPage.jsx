@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useRef , useEffect} from 'react';
 import lovingbeauty from '/src/assets/beauty.jpeg';
 import lovingbeautyone from '/src/assets/loving.jpeg';
 import Navbar from '../../Navbar';
 import '../../App.css'
 import LandingSales from './LandingSales';
+
 
 const LandingPage = () => {
   return (
