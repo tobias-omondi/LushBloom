@@ -32,19 +32,19 @@ const LandingScroll = () => {
         Explore our exclusive range of skincare products tailored for glowing, healthy skin.
       </p>
 
-      <div className="flex flex-wrap justify-between items-stretch gap-6">
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center p-4 rounded-xl ${image.bgColor} text-black w-[350px] h-[500px]`}
+            className={`flex flex-col items-center p-4 rounded-xl ${image.bgColor} text-black w-[370px] h-[500px]`}
           >
             <img
               src={image.src}
               alt={`skincare-${index + 1}`}
-              className="w-full h-[300px] object-cover rounded-3xl"
+              className="w-full h-[340px] object-cover rounded-4xl"
             />
-            <h3 className="text-xl font-semibold mt-4">{image.title}</h3>
-            <p className="text-sm mt-2 text-center px-2">{image.description}</p>
+            <h3 className="text-xl font-semibold mt-8">{image.title}</h3>
+            <p className="text-sm mt-3 text-center px-2">{image.description}</p>
           </div>
         ))}
       </div>
