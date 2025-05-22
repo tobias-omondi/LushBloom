@@ -30,7 +30,7 @@ const LandingSales = ({ Title, Description }) => {
 
   return (
  
-    <div className='bg-orange-500 w-full p-4 md:p-10'>
+    <div className='bg-orange-600 w-full p-4 md:p-10'>
       <div>
       <div>
         <h1

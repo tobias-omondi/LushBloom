@@ -1,8 +1,10 @@
 import React from 'react'
 import beauty3 from '/src/assets/beauty4.jpeg'
+import LandingScroll from './LandingScroll'
 
 const SectionTwo = () => {
   return (
+    <>
     <div className='mt-12 flex flex-col md:flex-row justify-evenly'>
         <div className='w-full md:w-2/4'>
             <h1 className='text-white text-3xl md:text-5xl py-2 md:py-5 font-bold text-center '>From small teams to large organizations</h1>
@@ -12,6 +14,8 @@ const SectionTwo = () => {
             <img src={beauty3} alt='a woman doing makeup' className='h-[400px] w-[500px] object-cover rounded-3xl' />
         </div>
     </div>
+    <LandingScroll/>
+    </>
   )
 }
 
