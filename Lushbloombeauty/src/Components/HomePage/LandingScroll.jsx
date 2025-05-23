@@ -3,6 +3,7 @@ import skincare1 from '/src/assets/skincare1.jpeg';
 import skincare2 from '/src/assets/skincare2.jpeg';
 import skincare3 from '/src/assets/skincare3.jpeg';
 import { motion, useInView, AnimatePresence } from "motion/react"
+import Footer from '../Footer';
 
 const images = [
   {
@@ -29,16 +30,17 @@ const LandingScroll = () => {
   const ref = React.useRef(null);
   // const isInView = useInView(ref, { once: false });
   return (
-    <div className="mt-16 bg-yellow-950 brightness-125 py-10 px-1 rounded shadow text-white text-center">
+    <>
+    <div className="mt-16 w-full brightness-125 py-10 px-1 rounded shadow-xl text-white text-center">
       <motion.h2 
        initial={{ filter: "blur(5px)", opacity: 0 }}
        whileInView={{ filter: "blur(0px)", opacity: 1 }}
        transition={{ duration: 1.2 }}
-      className="text-3xl md:text-5xl font-extrabold mb-4">Our Skincare Collection</motion.h2>
+      className="text-3xl md:text-5xl font-extrabold mb-4 text-black">Our Skincare Collection</motion.h2>
       <motion.p
        initial={{ filter: "blur(5px)", opacity: 0 }}
        whileInView={{ filter: "blur(0px)", opacity: 1 }}
-       transition={{ duration: 1.2 }} className="text-lg mb-10 max-w-3xl mx-auto">
+       transition={{ duration: 1.2 }} className="text-lg mb-10 max-w-3xl mx-auto text-black">
         Explore our exclusive range of skincare products tailored for glowing, healthy skin.
       </motion.p>
 
@@ -62,11 +64,13 @@ const LandingScroll = () => {
               initial={{ filter: "blur(8px)", opacity: 0 ,y:20 }}
               whileInView={{ filter: "blur(0px)", opacity: 1, y:0 }}
               transition={{ duration: 1.3 }}
-              className="text-sm mt-3 text-center px-2">{image.description}</motion.p>
+              className="text-sm mt-3 text-center px-2 text-black">{image.description}</motion.p>
           </div>
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

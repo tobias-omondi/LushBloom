@@ -11,6 +11,7 @@ import beauty1 from '/src/assets/makeup2.jpeg';
 import beauty2 from '/src/assets/makeup.jpeg';
 import beauty3 from '/src/assets/makeup1.jpeg';
 import SectionTwo from './SectionTwo';
+import Footer from '../Footer';
 
 gsap.registerPlugin(TextPlugin, SlowMo);
 
