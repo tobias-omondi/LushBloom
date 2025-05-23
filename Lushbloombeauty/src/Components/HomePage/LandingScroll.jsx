@@ -30,8 +30,8 @@ const LandingScroll = () => {
   const ref = React.useRef(null);
   // const isInView = useInView(ref, { once: false });
   return (
-    <>
-    <div className="mt-16 w-full brightness-125 py-10 px-1 rounded shadow-xl text-white text-center">
+      <>
+  <div className="mt-16 brightness-125 py-10 px-2 rounded-xl shadow text-white text-center mx-auto items-center w-5/6 ">
       <motion.h2 
        initial={{ filter: "blur(5px)", opacity: 0 }}
        whileInView={{ filter: "blur(0px)", opacity: 1 }}
@@ -44,7 +44,7 @@ const LandingScroll = () => {
         Explore our exclusive range of skincare products tailored for glowing, healthy skin.
       </motion.p>
 
-      <div className="flex flex-col md:flex-row justify-evenly items-center md:items-stretch gap-6">
+      <div className="flex flex-col md:flex-row justify-evenly items-center gap-5 mx-auto ">
         {images.map((image, index) => (
           <div
             key={index}

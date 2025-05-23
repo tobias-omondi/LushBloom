@@ -5,40 +5,30 @@ import { TextPlugin } from "gsap/TextPlugin";
 import 'swiper/css/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Pagination, Autoplay } from 'swiper/modules';
+import { motion } from "motion/react"
 
 // Your image imports
 import beauty1 from '/src/assets/makeup2.jpeg'; 
 import beauty2 from '/src/assets/makeup.jpeg';
 import beauty3 from '/src/assets/makeup1.jpeg';
 import SectionTwo from './SectionTwo';
-import Footer from '../Footer';
 
-gsap.registerPlugin(TextPlugin, SlowMo);
+
+
 
 const LandingSales = ({ Title, Description }) => {
-  const headlineRef = useRef(null);
-
-  useEffect(() => {
-    gsap.to(headlineRef.current, {
-      duration: 4,
-      text: "The one beauty behind it all:",
-      ease: SlowMo.ease.config(0.2, 0.2, false),
-      opacity: 0.8,
-      scale: 1,
-      color: "black",
-    });
-  }, []);
-
   return (
- 
+
+    <div>
     <div className='bg-gray-100 w-full p-4 md:p-10'>
       <div>
-      <div>
-        <h1
-          ref={headlineRef}
-          className='text-black text-3xl md:text-5xl py-2 md:py-5 font-bold'
-        ></h1>
-        <h3 className='text-gray-900 py-4 md:py-3 text-xl md:text-4xl'>
+        <motion.h1
+         initial={{ filter: "blur(8px)", opacity: 0 ,y:20 }}
+         whileInView={{ filter: "blur(0px)", opacity: 1, y:0 }}
+         transition={{ duration: 1 }}
+        className='text-gray-900 text-3xl md:text-5xl py-2 md:py-5 font-bold'
+        >The one beauty behind it all: </motion.h1>
+        <h3 className='text-gray-700 py-4 md:py-3 text-xl md:text-4xl'>
           Sell online and in person.frozen in time.
           <span className='cursor-pointer hover:text-gray-700'>
             sell locally and nationwide.
