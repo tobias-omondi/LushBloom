@@ -24,18 +24,18 @@ const LandingSales = ({ Title, Description }) => {
       ease: SlowMo.ease.config(0.2, 0.2, false),
       opacity: 0.8,
       scale: 1,
-      color: "white",
+      color: "black",
     });
   }, []);
 
   return (
  
-    <div className='bg-orange-600 w-full p-4 md:p-10'>
+    <div className='bg-gray-100 w-full p-4 md:p-10'>
       <div>
       <div>
         <h1
           ref={headlineRef}
-          className='text-yellow-300 text-3xl md:text-5xl py-2 md:py-5 font-bold'
+          className='text-black text-3xl md:text-5xl py-2 md:py-5 font-bold'
         ></h1>
         <h3 className='text-gray-900 py-4 md:py-3 text-xl md:text-4xl'>
           Sell online and in person.frozen in time.

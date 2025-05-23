@@ -27,9 +27,9 @@ const images = [
 
 const LandingScroll = () => {
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: false });
+  // const isInView = useInView(ref, { once: false });
   return (
-    <div className="mt-16 bg-amber-950 py-10 px-1 rounded shadow text-white text-center">
+    <div className="mt-16 bg-yellow-950 brightness-125 py-10 px-1 rounded shadow text-white text-center">
       <motion.h2 
        initial={{ filter: "blur(5px)", opacity: 0 }}
        whileInView={{ filter: "blur(0px)", opacity: 1 }}
@@ -46,12 +46,12 @@ const LandingScroll = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center p-4 rounded-xl ${image.bgColor} text-black w-[300px] h-[500px]`}
+            className={`flex flex-col items-center p-4 rounded-xl ${image.bgColor} text-black w-[300px] h-[500px] shadow-2xl`}
           >
             <img
               src={image.src}
               alt={`skincare-${index + 1}`}
-              className="w-full h-[300px] md:h-[340px] object-cover rounded-4xl"
+              className="w-full h-[300px] md:h-[340px] object-cover rounded-4xl shadow-2xl"
             />
             <motion.h3 
               initial={{ filter: "blur(5px)", opacity: 0 }}
