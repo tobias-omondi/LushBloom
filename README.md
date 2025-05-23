@@ -1,1 +1,1 @@
-# ChickenShopify
+# LushBloom
