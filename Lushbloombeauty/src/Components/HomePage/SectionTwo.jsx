@@ -11,7 +11,7 @@ const SectionTwo = () => {
             <p className='text-center text-xl text-gray-900'>Discover a platform crafted for beauty visionaries of every kind. Whether you're launching your first skincare line or managing a thriving salon, we give you the tools to grow, sell, and shine. From bold indie brands to luxury cosmetics labels, we help bring your beauty business to life online and in person. Seamlessly showcase your products, connect with your audience, and make every interaction unforgettable. Because in beauty, every detail matters and so does your brand.</p>
         </div>
         <div className='mt-12'>
-            <img src={beauty3} alt='a woman doing makeup' className='h-[300px] w-[400px] object-cover rounded-3xl' />
+            <img src={beauty3} alt='a woman doing makeup' className='h-[350px] w-[300px] object-cover rounded-3xl' />
         </div>
     </div>
     <LandingScroll/>
