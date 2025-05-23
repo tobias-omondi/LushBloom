@@ -4,6 +4,7 @@ import skincare2 from '/src/assets/skincare2.jpeg';
 import skincare3 from '/src/assets/skincare3.jpeg';
 import { motion, useInView, AnimatePresence } from "motion/react"
 import Footer from '../Footer';
+import SectionThree from './SectionThree';
 
 const images = [
   {
@@ -68,7 +69,11 @@ const LandingScroll = () => {
           </div>
         ))}
       </div>
+      <div className='mt-7 items-center'>
+        <button type='submit' className='bg-orange-900 py-4 px-2 rounded-xl font-light'>Select a suitable budget</button>
+      </div>
     </div>
+    <SectionThree/>
     <Footer/>
     </>
   );
