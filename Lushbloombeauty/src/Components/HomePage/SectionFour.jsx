@@ -44,7 +44,7 @@ const SectionFour = () => {
         <span className=''>Get ready to accept payments from customers</span>
         </h2>
         <div className='py-3'>
-        <button type='submit' className='bg-amber-800 py-2 px-4 rounded-2xl text-white cursor-pointer'>Start Selling</button>
+        <button type='submit' className='bg-orange-700 py-2 px-4 rounded text-white cursor-pointer font-bold'>Start Selling</button>
       </div>
         </div>
       </div>

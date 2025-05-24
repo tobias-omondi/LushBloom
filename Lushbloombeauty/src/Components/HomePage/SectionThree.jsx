@@ -17,7 +17,7 @@ const SectionThree = () => {
       </div>
       </div>
       <div className='flex justify-center py-8'>
-      <button type='submit' className='bg-orange-700 justify-center text-white font-bold cursor-pointer py-2 px-4 rounded-xl '>Buy Now</button>
+      <button type='submit' className='bg-orange-700 justify-center text-white font-bold cursor-pointer py-2 px-4 rounded '>Buy Now</button>
       </div>
     </div>
     <SectionFour/>
