@@ -18,7 +18,7 @@ const SectionFour = () => {
 
   return (
     <div className="section-four">
-      <div className="flex flex-col-reverse md:flex-row gap-4 items-center">
+      <div className="flex flex-col-reverse md:flex-row gap-4 items-center justify-evenly">
         <img
           src={showFirstPair ? salonimage : extra1}
           alt="img1"
@@ -30,17 +30,17 @@ const SectionFour = () => {
           <img
             src={showFirstPair ? marketgraph : extra2}
             alt="img2"
-            className="w-[250px] h-[300px] object-cover rounded-2xl transition-opacity duration-1000"
+            className="hidden md:block w-[250px] h-[300px] object-cover rounded-2xl transition-opacity duration-1000"
           />
         </div>
         <div className='flex flex-col items-center'>
-        <h2 className='text-white text-4xl px-1 py-3 text-center'>
+        <h2 className='text-white text-xl md:text-3xl px-1 py-3 text-center font-bold'>
             <span>Begin building your catalog</span>
         </h2>
-        <h2 className='text-white text-4xl gap-7 px-1 py-3 text-center'>
+        <h2 className='text-white text-xl md:text-3xl px-1 py-3 text-center font-bold'>
             <span> Make your shop uniquely yours</span>
         </h2>
-        <h2 className='text-white text-4xl px-1 py-3 text-center'>
+        <h2 className='text-white text-xl md:text-3xl px-1 py-3 text-center font-bold'>
         <span className=''>Get ready to accept payments from customers</span>
         </h2>
         <div className='py-3'>
