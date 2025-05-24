@@ -59,12 +59,12 @@ const LandingScroll = () => {
             <motion.h3 
               initial={{ filter: "blur(5px)", opacity: 0 }}
               whileInView={{ filter: "blur(0px)", opacity: 1 }}
-              transition={{ duration: 1.2 }}
+              transition={{ duration: 0.8 }}
               className="text-xl font-semibold mt-8">{image.title}</motion.h3>
             <motion.p 
               initial={{ filter: "blur(8px)", opacity: 0 ,y:20 }}
               whileInView={{ filter: "blur(0px)", opacity: 1, y:0 }}
-              transition={{ duration: 1.3 }}
+              transition={{ duration: 1 }}
               className="text-sm mt-3 text-center px-2 text-black">{image.description}</motion.p>
           </div>
         ))}

@@ -39,3 +39,11 @@ a {
 a:hover {
   transform: translateY(-2px);
 }
+
+
+/* section four for homepage css */
+.section-four{
+  background: #2e1e08;
+background: linear-gradient(90deg, rgba(46, 30, 8, 0.87) 19%, rgba(46, 24, 24, 0.75) 34%, rgba(0, 0, 0, 1) 60%);
+  padding: 10px;
+}
