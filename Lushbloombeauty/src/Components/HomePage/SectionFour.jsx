@@ -18,32 +18,32 @@ const SectionFour = () => {
 
   return (
     <div className="section-four">
-      <div className="flex flex-row gap-4 items-center">
+      <div className="flex flex-col-reverse md:flex-row gap-4 items-center">
         <img
           src={showFirstPair ? salonimage : extra1}
           alt="img1"
-          className="w-[300px] h-[350px] object-cover rounded-2xl transition-opacity duration-1000"
+          className="w-[250px] h-[300px] object-cover rounded-2xl transition-opacity duration-1000"
         />
 
         {/* Second Image */}
-        <div className="mt-28">
+        <div className="mt-0 md:mt-32">
           <img
             src={showFirstPair ? marketgraph : extra2}
             alt="img2"
-            className="w-[300px] h-[350px] object-cover rounded-2xl transition-opacity duration-1000"
+            className="w-[250px] h-[300px] object-cover rounded-2xl transition-opacity duration-1000"
           />
         </div>
-        <div className='flex flex-col'>
-        <h2 className='text-white text-3xl px-1 py-2 text-start'>
-            <span className='text-4xl  text-green-600 px-10 py-6 '>1.</span><span>Begin building your catalog</span>
+        <div className='flex flex-col items-center'>
+        <h2 className='text-white text-4xl px-1 py-3 text-center'>
+            <span>Begin building your catalog</span>
         </h2>
-        <h2 className='text-white text-3xl gap-7 px-1 py-2 text-start'>
-            <span className='text-4xl  text-green-600 px-10 py-6 '>2.</span><span> Make your shop uniquely yours</span>
+        <h2 className='text-white text-4xl gap-7 px-1 py-3 text-center'>
+            <span> Make your shop uniquely yours</span>
         </h2>
-        <h2 className='text-white text-3xl px-1 py-2 text-start'>
-            <span className='text-4xl text-green-600 px-10 py-6 '>3.</span><span className=''>Get ready to accept payments from customers</span>
+        <h2 className='text-white text-4xl px-1 py-3 text-center'>
+        <span className=''>Get ready to accept payments from customers</span>
         </h2>
-        <div>
+        <div className='py-3'>
         <button type='submit' className='bg-amber-800 py-2 px-4 rounded-2xl text-white cursor-pointer'>Start Selling</button>
       </div>
         </div>
