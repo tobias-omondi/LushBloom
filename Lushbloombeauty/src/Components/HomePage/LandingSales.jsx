@@ -20,15 +20,15 @@ const LandingSales = ({ Title, Description }) => {
   return (
 
     <div>
-    <div className='bg-gray-100 w-full p-4 md:p-10'>
+    <div className='bg-white w-full p-4 md:p-10'>
       <div>
         <motion.h1
          initial={{ filter: "blur(8px)", opacity: 0 ,y:20 }}
          whileInView={{ filter: "blur(0px)", opacity: 1, y:0 }}
          transition={{ duration: 1 }}
-        className='text-gray-900 text-3xl md:text-5xl py-2 md:py-5 font-bold'
+        className='text-gray-950 text-2xl md:text-4xl py-2 md:py-5 font-medium'
         >The one beauty behind it all: </motion.h1>
-        <h3 className='text-gray-700 py-4 md:py-3 text-xl md:text-4xl'>
+        <p className='text-black py-3 font-light md:py-0  md:text-2xl'>
           Sell online and in person.frozen in time.
           <span className='cursor-pointer hover:text-gray-700'>
             sell locally and nationwide.
@@ -41,7 +41,7 @@ const LandingSales = ({ Title, Description }) => {
             {" "}
             Sell on mobile or desktop.
           </span>
-        </h3>
+        </p>
       </div>
 
       {/* Swiper with responsive breakpoints */}
@@ -55,7 +55,7 @@ const LandingSales = ({ Title, Description }) => {
         spaceBetween={20}
         slidesPerView={1} 
         loop={true}
-        className='mySwipe w-fullr'
+        className='mySwipe w-full mt-7'
         breakpoints={{
           640: {
             slidesPerView: 1, 
@@ -70,7 +70,7 @@ const LandingSales = ({ Title, Description }) => {
       >
         {/* Individual slides for each image to maintain your styling */}
         <SwiperSlide>
-        <div className='w-full md:w-5/6 max-w-[500px] h-[300px] md:h-[400px] mx-auto'>
+        <div className='w-full md:w-5/6 max-w-[500px] h-[300px] md:h-[400px] mx-auto '>
            <img src={beauty1} alt='makeup 1' className='w-full h-full rounded-lg object-cover shadow-lg'/>
          </div>
         </SwiperSlide>

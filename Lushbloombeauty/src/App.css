@@ -43,7 +43,11 @@ a:hover {
 
 /* section four for homepage css */
 .section-four{
-  background: #2e1e08;
-background: linear-gradient(90deg, rgba(46, 30, 8, 0.87) 19%, rgba(46, 24, 24, 0.75) 34%, rgba(0, 0, 0, 1) 60%);
+  background-image: url(/src/assets/background.mp4);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
   padding: 10px;
+  border-radius: 0px 0px 50px 50px;
 }

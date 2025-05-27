@@ -9,19 +9,19 @@ import SectionThree from './SectionThree';
 const images = [
   {
     src: skincare1,
-    bgColor: 'bg-rose-100',
+    bgColor: 'bg-black',
     title: 'Hydrating Cleanser',
     description: 'Gently removes dirt while keeping your skin moisturized.'
   },
   {
     src: skincare2,
-    bgColor: 'bg-amber-200',
+    bgColor: 'bg-black',
     title: 'Glow Serum',
     description: 'Brightens and rejuvenates your skin with natural ingredients.'
   },
   {
     src: skincare3,
-    bgColor: 'bg-lime-100',
+    bgColor: 'bg-black',
     title: 'Soothing Cream',
     description: 'Calms irritated skin and locks in moisture all day.'
   }
@@ -49,7 +49,7 @@ const LandingScroll = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center p-4 rounded-xl ${image.bgColor} text-black w-[300px] h-[500px] shadow-2xl`}
+            className={`flex flex-col items-center p-4 rounded-xl ${image.bgColor} text-black w-[300px] h-[500px] shadow-xl`}
           >
             <img
               src={image.src}
@@ -60,17 +60,17 @@ const LandingScroll = () => {
               initial={{ filter: "blur(5px)", opacity: 0 }}
               whileInView={{ filter: "blur(0px)", opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="text-xl font-semibold mt-8">{image.title}</motion.h3>
+              className="text-xl font-semibold mt-8 text-white">{image.title}</motion.h3>
             <motion.p 
               initial={{ filter: "blur(8px)", opacity: 0 ,y:20 }}
               whileInView={{ filter: "blur(0px)", opacity: 1, y:0 }}
               transition={{ duration: 1 }}
-              className="text-sm mt-3 text-center px-2 text-black">{image.description}</motion.p>
+              className="text-sm mt-3 text-center px-2 text-white">{image.description}</motion.p>
           </div>
         ))}
       </div>
       <div className='mt-7 items-center'>
-        <button type='submit' className='bg-orange-900 py-4 px-2 rounded-xl font-light'>Select a suitable budget</button>
+        <button type='submit' className='bg-orange-500 py-4 px-2 rounded-xl font-light cursor-pointer'>Select a suitable budget</button>
       </div>
     </div>
     <SectionThree/>
