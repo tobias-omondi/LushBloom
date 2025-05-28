@@ -4,7 +4,7 @@ import salonimage from '/src/assets/package.jpeg';
 import marketgraph from '/src/assets/market.jpeg';
 import extra1 from '/src/assets/lip.jpeg';
 import extra2 from '/src/assets/salon.jpeg';
-import bgvideo from '/src/assets/background.mp4';
+// import bgvideo from '/src/assets/background.mp4';
 
 const SectionFour = () => {
   const [showFirstPair, setShowFirstPair] = useState(true);
@@ -27,7 +27,7 @@ const SectionFour = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover brightness-75 z-0 rounded-b-3xl"
       >
-        <source src={bgvideo} type="video/mp4" />
+        <source src="https://res.cloudinary.com/djyfoquip/video/upload/v1748410650/background_crpuk0.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

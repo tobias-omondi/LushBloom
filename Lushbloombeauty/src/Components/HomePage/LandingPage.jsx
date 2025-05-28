@@ -1,5 +1,4 @@
 import React, {useRef , useEffect} from 'react';
-import lovingbeauty from '/src/assets/lushbloom.mp4';
 import Navbar from '../../Navbar';
 import '../../App.css'
 import LandingSales from './LandingSales';
@@ -10,9 +9,9 @@ const LandingPage = () => {
     <>
     <div className=' relative w-full h-screen -mt-24 md:-mt-20'>
       {/* Background Image for Large Screens */}
-      <video autoPlay loop muted playsInline className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75"> <source src={lovingbeauty} type='video/mp4' /></video>
+      <video autoPlay loop muted playsInline className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75"> <source src= "https://res.cloudinary.com/djyfoquip/video/upload/v1748410794/lushbloom_pzaqkx.mp4" type='video/mp4' /></video>
       {/* Background Image for Small Screens */}
-     <video autoPlay loop muted playsInline  className='block sm:hidden absolute inset-0 w-full h-full object-cover brightness-75'><source  src={lovingbeauty}  type='video/mp4'/>  </video>
+     <video autoPlay loop muted playsInline  className='block sm:hidden absolute inset-0 w-full h-full object-cover brightness-75'><source  src="https://res.cloudinary.com/djyfoquip/video/upload/v1748410794/lushbloom_pzaqkx.mp4"  type='video/mp4'/>  </video>
       {/* Navbar on top */}
       <div className='absolute top-4 md:top-0 left-0 w-full z-20'>
         <Navbar />
