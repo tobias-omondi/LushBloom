@@ -1,8 +1,10 @@
 import React from 'react';
 import skincareproduct from '/src/assets/Beautiful black girl with shopping bags in a city _ Free Photo.jpeg';
+import Cards from './Cards';
 
 const SectionThree = () => {
   return (
+    <>
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <video
@@ -51,6 +53,8 @@ const SectionThree = () => {
         </div>
       </div>
     </div>
+    <Cards />
+    </>
   );
 };
 
