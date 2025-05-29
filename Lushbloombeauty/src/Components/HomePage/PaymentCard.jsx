@@ -40,14 +40,17 @@ const PaymentCard = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 px-4'>
         {paymentcard.map((plan) => (
-          <div key={plan.id} className='border rounded-lg shadow-lg p-6'>
-            <h2 className='text-xl font-bold mb-2 text-center'>{plan.title}</h2>
-            <p className='text-sm text-gray-600 mb-4'>{plan.description}</p>
-            <ul className='text-sm list-disc pl-5 space-y-1'>
+          <div key={plan.id} className='border rounded-lg shadow-lg p-6 bg-gray-950'>
+            <h2 className='text-xl font-bold mb-2 text-center text-white'>{plan.title}</h2>
+            <p className='text-sm text-white mb-4'>{plan.description}</p>
+            <ul className='text-sm list-disc pl-5 space-y-1 text-white'>
               <li>{plan.featuresone}</li>
               <li>{plan.featurestwo}</li>
               <li>{plan.featurethree}</li>
             </ul>
+            <button className='mt-4 w-full bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800 transition'>
+                Select Plan
+            </button>
           </div>
         ))}
       </div>
