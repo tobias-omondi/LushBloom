@@ -51,3 +51,14 @@ a:hover {
   padding: 10px;
   border-radius: 0px 0px 50px 50px;
 }
+
+/* footer section */
+.footer-section{
+background: #000000;
+background: linear-gradient(192deg, rgba(0, 0, 0, 1) 48%, rgba(255, 94, 0, 1) 74%);
+padding: 7rem;
+border-radius: 128px 129px 0px 0px;
+-webkit-border-radius: 128px 129px 0px 0px;
+-moz-border-radius: 128px 129px 0px 0px;
+margin-top: 4rem;
+}
