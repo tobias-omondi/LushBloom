@@ -2,6 +2,7 @@ import React, {useRef , useEffect} from 'react';
 import Navbar from '../../Navbar';
 import '../../App.css'
 import LandingSales from './LandingSales';
+// import afrcanpicturewoman from '/src/assets/africanlady.jpg'
 
 
 const LandingPage = () => {
@@ -9,6 +10,7 @@ const LandingPage = () => {
     <>
     <div className=' relative w-full h-screen -mt-24 md:-mt-20'>
       {/* Background Image for Large Screens */}
+      {/* <img src={afrcanpicturewoman} alt='african lady with a makeup' className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75" /> */}
       <video autoPlay loop muted playsInline className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75"> <source src= "https://res.cloudinary.com/djyfoquip/video/upload/v1748410794/lushbloom_pzaqkx.mp4" type='video/mp4' /></video>
       {/* Background Image for Small Screens */}
      <video autoPlay loop muted playsInline  className='block sm:hidden absolute inset-0 w-full h-full object-cover brightness-75'><source  src="https://res.cloudinary.com/djyfoquip/video/upload/v1748410794/lushbloom_pzaqkx.mp4"  type='video/mp4'/>  </video>
