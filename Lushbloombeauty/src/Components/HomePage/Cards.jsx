@@ -1,4 +1,5 @@
 import React from 'react'
+import PaymentCard from './PaymentCard'
 
 const Cards = () => {
 
@@ -10,14 +11,17 @@ const Cards = () => {
             { id: 5, Title: "Fragrance Products", description: "Make a lasting impression with our range of fragrances. Whether light and floral or bold and musky, find the perfect scent that speaks to you." }
           ]
   return (
+    <>
         <div className='flex flex-wrap justify-evenly mt-10 px-10 gap-2'>
             {cardComponets.map(card =>(
-                <div key={card.id} className='p-5 shadow rounded-2xl text-center w-2/5 mt-10'>
+                <div key={card.id} className='p-5 shadow rounded-2xl text-center md:w-2/5 mt-10'>
                     <h1 className='text-2xl py-2 text-gray-900'>{card.Title}</h1>
                     <p className='py-1 text-gray-700 font-light'>{card.description}</p>
                 </div>
             ))}
         </div>
+        <PaymentCard />
+    </>
   )
 }
 
