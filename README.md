@@ -15,3 +15,5 @@ A software solution for vendors platform that sale beauty products to consumers.
 - framer motion
 - tailwind css
 - swiper.js
+
+  
