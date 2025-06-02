@@ -16,7 +16,7 @@ const LandingPage = () => {
       <img src={backgroundimage} alt='african lady with a makeup' className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75" />
       {/* <video autoPlay loop muted playsInline className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75"> <source src= "https://res.cloudinary.com/djyfoquip/video/upload/v1748410794/lushbloom_pzaqkx.mp4" type='video/mp4' /></video> */}
       {/* Background Image for Small Screens */}
-      <img src={backgroundimage} alt='african lady with a makeup'  className='block sm:hidden absolute inset-0 w-full h-full object-cover brightness-75' />
+      <img src={backgroundimagemobile} alt='african lady with a makeup'  className='block sm:hidden absolute inset-0 w-full h-full object-cover brightness-75' />
      {/* <video autoPlay loop muted playsInline  className='block sm:hidden absolute inset-0 w-full h-full object-cover brightness-75'><source  src="https://res.cloudinary.com/djyfoquip/video/upload/v1748410794/lushbloom_pzaqkx.mp4"  type='video/mp4'/>  </video> */}
       {/* Navbar on top */}
       <div className='absolute top-4 md:top-0 left-0 w-full z-20'>
