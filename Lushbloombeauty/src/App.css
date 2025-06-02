@@ -54,17 +54,11 @@ a:hover {
 
 /* footer section */
 .footer-section{
-background: #000000;
-background: linear-gradient(192deg, rgba(0, 0, 0, 1) 48%, rgba(255, 94, 0, 1) 74%);
+  background: #000000;
+  background: linear-gradient(36deg, rgba(0, 0, 0, 1) 68%, rgba(255, 94, 0, 1) 98%);
 padding: 2.5rem;
 border-radius: 128px 129px 0px 0px;
 -webkit-border-radius: 128px 129px 0px 0px;
 -moz-border-radius: 128px 129px 0px 0px;
 margin-top: 4rem;
-}
-
-/* logo css */
-.logo {
-  width: 100px;
-  border: 30px 20px;
 }
