@@ -3,6 +3,7 @@ import '../App.css'
 import { Link } from 'react-router-dom'
 import { CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
 import { AiFillTikTok } from 'react-icons/ai';
+import { RiTwitterXFill } from 'react-icons/ri';
 
 const Footer = () => {
   return (
@@ -55,7 +56,7 @@ const Footer = () => {
        <div className='w-2/3 mx-auto text-center h-1 bg-orange-500 rounded-full'>
         <div className='flex flex-row gap-5 items-center justify-center py-5 '>  
         <a href='' className='text-white '> <CiLinkedin size={25}/> </a>
-        <a href='' className='text-white'> <CiTwitter size={25}/> </a>
+        <a href='' className='text-white'> <RiTwitterXFill size={25}/> </a>
         <a href='' className='text-white'> <CiInstagram size={25}/> </a>
         <a href='' className='text-white'> <AiFillTikTok size={25}/> </a>
         </div>
