@@ -1,6 +1,8 @@
 import React from 'react';
 
 const PaymentCard = () => {
+
+  // subscription descricption for the main page
   const paymentcard = [
     {
       id: 1,
