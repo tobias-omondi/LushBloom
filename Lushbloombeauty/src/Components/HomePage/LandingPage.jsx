@@ -13,7 +13,7 @@ const LandingPage = () => {
     <>
     <div className=' relative w-full h-screen -mt-24 md:-mt-20'>
       {/* Background Image for Large Screens */}
-      <img src={backgroundimage} alt='african lady with a makeup' className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75" />
+      <img src={backgroundimage} alt='african lady with a makeup' className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-50" />
       {/* <video autoPlay loop muted playsInline className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-75"> <source src= "https://res.cloudinary.com/djyfoquip/video/upload/v1748410794/lushbloom_pzaqkx.mp4" type='video/mp4' /></video> */}
       {/* Background Image for Small Screens */}
       <img src={backgroundimagemobile} alt='african lady with a makeup'  className='block sm:hidden absolute inset-0 w-full h-full object-cover brightness-75' />
@@ -29,7 +29,7 @@ const LandingPage = () => {
         <h4 className='text-2xl md:text-4xl font-bold mt-5'>
           For Beauty Lovers <br /> Only
         </h4>
-        <button type='submit' className='bg-orange-700 text-white rounded p-3 mt-10 border-orange-600 cursor-pointer px-6 py-3'>Shop Today</button>
+        <button type='submit' className='bg-blue-500 text-white rounded p-3 mt-10 border-blue-800 cursor-pointer px-6 py-3'>Shop Today</button>
       </div>
     </div>
     <div className='w-full z-10'>

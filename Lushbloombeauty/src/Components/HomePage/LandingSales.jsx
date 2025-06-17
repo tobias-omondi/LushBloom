@@ -18,7 +18,6 @@ import SectionTwo from './SectionTwo';
 
 const LandingSales = ({ Title, Description }) => {
   return (
-
     <div>
     <div className='bg-white w-full p-4 md:p-10'>
       <div>
@@ -26,9 +25,10 @@ const LandingSales = ({ Title, Description }) => {
          initial={{ filter: "blur(8px)", opacity: 0 ,y:20 }}
          whileInView={{ filter: "blur(0px)", opacity: 1, y:0 }}
          transition={{ duration: 1 }}
-        className='text-gray-950 text-2xl md:text-4xl py-2 md:py-5 font-medium'
+        className='text-gray-950 text-2xl md:text-3xl py-2 md:py-5 font-medium'
         >The one beauty behind it all: </motion.h1>
-        <p className='text-black py-3 font-light md:py-0  md:text-2xl'>
+
+        <p className='text-black py-3 font-light md:py-0  md:text-xl'>
           Sell online and in person.frozen in time.
           <span className='cursor-pointer hover:text-gray-700'>
             sell locally and nationwide.
@@ -42,6 +42,7 @@ const LandingSales = ({ Title, Description }) => {
             Sell on mobile or desktop.
           </span>
         </p>
+
       </div>
 
       {/* Swiper with responsive breakpoints */}
