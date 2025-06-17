@@ -37,7 +37,7 @@ const SectionThree = () => {
 
           {/* Button */}
           <div className="mt-6">
-            <button className="bg-orange-500 hover:bg-orange-600 transition duration-300 text-white py-3 px-6 rounded-full shadow-lg hover:shadow-orange-300 font-medium">
+            <button className="bg-blue-500 hover:bg-blue-600 transition duration-300 text-white py-3 px-6 rounded-full shadow-lg hover:shadow-orange-300 font-medium">
               Buy Now
             </button>
           </div>

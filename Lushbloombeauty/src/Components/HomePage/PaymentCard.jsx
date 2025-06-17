@@ -59,7 +59,7 @@ const PaymentCard = () => {
                 {plan.featurefour && <li>{plan.featurefour}</li>}
               </ul>
               <div className='text-center mt-8'>
-                <button className='mt-4 w-1/2 items-center cursor-pointer bg-orange-600 text-white py-2 px-4 rounded hover:bg-orange-800 transition'>
+                <button className='mt-4 w-1/2 items-center cursor-pointer bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-800 transition'>
                   Select Plan
                 </button>
               </div>

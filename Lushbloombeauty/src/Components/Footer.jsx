@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
       {/* social media links */}
-       <div className='w-2/3 mx-auto text-center h-1 bg-orange-500 rounded-full'>
+       <div className='w-2/3 mx-auto text-center h-1 bg-blue-500 rounded-full'>
         <div className='flex flex-row gap-5 items-center justify-center py-5 '>  
         <a href='' className='text-white '> <CiLinkedin size={25}/> </a>
         <a href='' className='text-white'> <RiTwitterXFill size={25}/> </a>
