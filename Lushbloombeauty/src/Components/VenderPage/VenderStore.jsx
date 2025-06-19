@@ -2,7 +2,7 @@ import React, {useRef , useEffect} from 'react';
 import Navbar from '../../Navbar';
 import '../../App.css'
 import backgroundimage from '/src/assets/venderherosection.jpg'
-import backgroundimagemobile from '/src/assets/venderherosection.jpg'
+import backgroundimagemobile from '/src/assets/vendorherosmall.jpg'
 
 // import afrcanpicturewoman from '/src/assets/africanlady.jpg'
 
