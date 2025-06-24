@@ -3,12 +3,21 @@ import Navbar from '../../Navbar';
 import '../../App.css'
 import LandingSales from './LandingSales';
 import backgroundimage from '/src/assets/heropage.webp'
-import backgroundimagemobile from '/src/assets/Leonardo_Kino_XL_beauty_products_3.jpg'
+import backgroundimagemobile from '/src/assets/heropage.webp'
+
+// use of aos animation plugins
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import './HeroPage.css'
 
 const HeroPage = () => {
+  useEffect (() => {
+    AOS.init ({duration: 2500, once: true});
+  },[])
+
   return (
+
     <>
     <div className=' relative w-full h-screen -mt-24 md:-mt-20'>
 
@@ -24,21 +33,23 @@ const HeroPage = () => {
       </div>
 
       {/* Page Content Centered */}
-      <div className='absolute top-1/2 left-0 transform -translate-y-1/2 z-20 text-start px-12'>
-         <div className='text-white text-6xl font-medium '><h1>Lush-Bloom</h1></div> 
-         <div className='text-white text-3xl font-mono py-3'><h3>FOR BEAUTY LOVERS ONLY</h3></div>
+      <div className='absolute top-1/2 left-0 transform -translate-y-1/2 z-20 text-start px-12' data-aos = "fade-up">
+         <div className='text-white text-4xl md:text-6xl font-medium ' ><h1>Lush-Bloom</h1></div> 
+         <div className='text-white text-xl md:text-3xl font-mono py-3'><h3>FOR BEAUTY LOVERS ONLY</h3></div>
 
            {/* button */}
 
            <div>
             <button type='submit' className='bg-blue-600 text-white py-2 px-5 rounded-2xl cursor-pointer hover:delay-100 hover:translate-0.5 hover:bg-blue-700 '>START NOW</button>
            </div>
+
+
       </div>
 
     
 
     </div>
-    <div className='w-full z-10'>
+      <div className='w-full z-10'>
         <LandingSales />
       </div>
     </>
