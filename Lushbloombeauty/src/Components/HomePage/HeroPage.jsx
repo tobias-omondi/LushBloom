@@ -1,7 +1,7 @@
 import React, {useRef , useEffect} from 'react';
 import Navbar from '../../Navbar';
 import '../../App.css'
-import LandingSales from './LandingSales';
+import CardSwiper from './CardSwiper';
 import backgroundimage from '/src/assets/heropage.webp'
 import backgroundimagemobile from '/src/assets/heropage.webp'
 
@@ -10,6 +10,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import './HeroPage.css'
+
+// use of framer motion plugins
+ import {motion} from "framer-motion"
+
 
 const HeroPage = () => {
   useEffect (() => {
@@ -40,7 +44,11 @@ const HeroPage = () => {
            {/* button */}
 
            <div>
-            <button type='submit' className='bg-blue-600 text-white py-2 px-5 rounded-2xl cursor-pointer hover:delay-100 hover:translate-0.5 hover:bg-blue-700 '>START NOW</button>
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            type='submit'   className="bg-blue-600 text-white py-2 px-5 rounded-2xl hover:bg-blue-700">START NOW</motion.button>
            </div>
 
 
@@ -50,7 +58,7 @@ const HeroPage = () => {
 
     </div>
       <div className='w-full z-10'>
-        <LandingSales />
+        <CardSwiper />
       </div>
     </>
   );
