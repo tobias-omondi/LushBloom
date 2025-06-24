@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className='flex justify-end p-7 bg-transparent relative'>
       {/* Desktop Navigation */}
-      <ul className='hidden list-none md:flex md:flex-row justify-end gap-12 text-white font-bold'>
+      <ul className='hidden list-none md:flex md:flex-row justify-end gap-12 text-white font-medium'>
         <li><Link to="/" className='hover:text-gray-300 transition-colors'>Home</Link></li>
         <li><Link to="/vendor-store" className='hover:text-gray-300 transition-colors'>Vendor Store</Link></li>
         <li><Link to="/help" className='hover:text-gray-300 transition-colors'>Help</Link></li>

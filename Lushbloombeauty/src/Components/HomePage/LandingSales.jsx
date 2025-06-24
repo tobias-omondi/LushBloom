@@ -15,7 +15,6 @@ import SectionTwo from './SectionTwo';
 
 
 
-
 const LandingSales = ({ Title, Description }) => {
   return (
     <div>
