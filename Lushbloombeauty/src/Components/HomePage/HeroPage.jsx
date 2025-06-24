@@ -34,8 +34,8 @@ const HeroPage = () => {
 
       {/* Page Content Centered */}
       <div className='absolute top-1/2 left-0 transform -translate-y-1/2 z-20 text-start px-12' data-aos = "fade-up">
-         <div className='text-white text-4xl md:text-6xl font-medium ' ><h1>Lush-Bloom</h1></div> 
-         <div className='text-white text-xl md:text-3xl font-mono py-3'><h3>FOR BEAUTY LOVERS ONLY</h3></div>
+         <div className='text-white text-5xl md:text-7xl font-medium ' ><h1>Lush-Bloom</h1></div> 
+         <div className='text-white text-2xl md:text-4xl font-mono py-3'><h3>FOR BEAUTY LOVERS ONLY</h3></div>
 
            {/* button */}
 
