@@ -8,6 +8,7 @@ import { motion } from "motion/react"
 import beauty1 from '/src/assets/cardSwiper1.webp'; 
 import beauty2 from '/src/assets/cardswiper2.webp';
 import beauty3 from '/src/assets/cardSwiper3.webp';
+import beauty4 from '/src/assets/cardSwiper4.jpg'
 import SectionTwo from './SectionTwo';
 
 
@@ -20,8 +21,14 @@ import 'aos/dist/aos.css';
 const CardSwiper = ({ Title, Description }) => {
 
    useEffect (() => {
-      AOS.init ({duration: 2500, once: true});
+      AOS.init ({duration: 1000, once: true});
     },[])
+
+    const fadeUp = {
+      hidden: { opacity: 0, y: 30 },
+      visible: { opacity: 1, y: 0 },
+    };
+    
 
   return (
     <div>
@@ -34,7 +41,12 @@ const CardSwiper = ({ Title, Description }) => {
          className='text-gray-950 text-2xl md:text-3xl py-2 md:py-5 font-medium'
         >The one beauty behind it all: </motion.h1>
 
-        <p className='text-black py-3 font-light md:py-0  md:text-xl'>
+        <motion.p 
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8 }}
+        className='text-black py-3 font-light md:py-0  md:text-xl' >
           Sell online and in person.frozen in time.
           <span className='cursor-pointer hover:text-gray-700' >
             sell locally and nationwide.
@@ -47,7 +59,7 @@ const CardSwiper = ({ Title, Description }) => {
             {" "}
             Sell on mobile or desktop.
           </span>
-        </p>
+        </motion.p>
 
       </div>
 
@@ -76,19 +88,26 @@ const CardSwiper = ({ Title, Description }) => {
         }}
       >
         {/* Individual slides for each image to maintain your styling */}
-        <SwiperSlide >
-        <div className='w-full md:w-full max-w-[500px] h-[300px] md:h-[500px] mx-auto brightness-75'>
+        <SwiperSlide 
+        >
+        <div className='w-full md:w-full max-w-[500px] h-[300px] md:h-[450px] mx-auto brightness-75'>
            <img src={beauty1} alt='makeup 1' className='w-full h-full rounded-lg object-cover shadow-lg'/>
          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full md:w-full max-w-[500px] h-[300px] md:h-[500px] mx-auto brightness-75'>
+          <div className='w-full md:w-full max-w-[500px] h-[300px] md:h-[450px] mx-auto brightness-75'>
             <img src={beauty2} alt='makeup 2' className='w-full h-full rounded-lg object-cover shadow-lg'/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full md:w-full max-w-[500px] h-[300px] md:h-[500px] mx-auto brightness-75'>
+          <div className='w-full md:w-full max-w-[500px] h-[300px] md:h-[450px] mx-auto brightness-75'>
            <img src={beauty3} alt='makeup 1' className='w-full h-full rounded-lg object-cover shadow-lg'/>
+        </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className='w-full md:w-full max-w-[500px] h-[300px] md:h-[450px] mx-auto brightness-75'>
+           <img src={beauty4} alt='makeup 1' className='w-full h-full rounded-lg object-cover shadow-lg'/>
         </div>
         </SwiperSlide>
         
