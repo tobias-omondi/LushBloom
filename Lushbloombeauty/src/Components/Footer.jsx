@@ -8,21 +8,21 @@ import { RiTwitterXFill } from 'react-icons/ri';
 const Footer = () => {
   return (
     <>
-    <div className='footer-section'>
+    {/* <div className='footer-section'>
       <h1 className='text-white text-sm m-10 md:text-xl text-center md:w-2/3 md:mx-auto font-medium'>LushBloom is a beauty marketplace for vendors to sell their products online. Join our community and grow your brand with us.</h1>
-    </div>
+    </div> */}
 
     {/* main footer container */}
 
-    <div className='bg-gray-950 p-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 '>
+    <div className='bg-gray-950 p-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 '>
       <div className='w-28 '>
         <img src='https://i.pinimg.com/736x/fa/0f/84/fa0f8436af0ae70e7a9fc41c1c90d353.jpg' alt='logo image' />
       </div>
 
       {/* title for the page */}
       <div className='text-white text-xl text-start'>
-        <h2 className='text-gray-500'>LushBloom Beauty</h2>
-        <div className='flex flex-col py-4 text-xl font-light '>
+        <h2 className='text-gray-200'>LushBloom Beauty</h2>
+        <div className='flex flex-col py-4  font-light '>
           <Link to='/' className='py-1'>Home</Link>
           <Link to='/vendor-store' className='py-1' >Vendor Store</Link>
           <Link to='/help' className='py-1' >Help</Link>
@@ -33,9 +33,9 @@ const Footer = () => {
       </div>
 
       {/* Products links */}
-      <div className='text-white text-2xl text-start'>
-        <h2 className='text-gray-500'>LushBloom Products</h2>
-        <div className='flex flex-col py-4 text-xl font-light '>
+      <div className='text-white text-xl text-start'>
+        <h2 className='text-gray-200'>LushBloom Products</h2>
+        <div className='flex flex-col py-4  font-light '>
           <Link to='/shop' className='py-1'>shop</Link>
           <Link to='/shop-plus' className='py-1' >Shop Plus</Link>
           <Link to='/shop-psy' className='py-1' >Shop Pay</Link>
@@ -44,9 +44,9 @@ const Footer = () => {
       </div>
 
         {/* social links  */}
-        <div className='text-white text-2xl text-start'>
-        <h2 className='text-gray-500'>LushBloom Contacts</h2>
-        <div className='flex flex-col py-4 text-xl font-light '>
+        <div className='text-white text-xl text-start'>
+        <h2 className='text-gray-200'>LushBloom Contacts</h2>
+        <div className='flex flex-col py-4 font-light '>
           <h2>Email: <span className='cursor-pointer hover:text-gray-700'>lushbloom@gmail.com</span></h2>
           <h2>Phone number: <span className='cursor-pointer hover:text-gray-700'>+254 741 041 580 | add phone number</span></h2>
         </div>
