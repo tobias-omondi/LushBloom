@@ -30,18 +30,18 @@ const LandingScroll = () => (
     <div className="mt-16 py-10 text-center mx-auto max-w-screen-xl">
       {/* Heading */}
       <motion.h2
-        initial={{ filter: 'blur(5px)', opacity: 0 }}
-        whileInView={{ filter: 'blur(0)', opacity: 1 }}
+        initial={{ filter: 'blur(5px)', opacity: 0 , x: -20 }}
+        whileInView={{ filter: 'blur(0)', opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
-        className="text-3xl md:text-5xl font-extrabold mb-4 text-black"
+        className="text-xl md:text-3xl font-extrabold mb-4 text-black"
       >
         Our Skincare Collection
       </motion.h2>
 
       {/* Sub‑heading */}
       <motion.p
-        initial={{ filter: 'blur(5px)', opacity: 0 }}
-        whileInView={{ filter: 'blur(0)', opacity: 1 }}
+        initial={{ filter: 'blur(5px)', opacity: 0 , y: 20, }}
+        whileInView={{ filter: 'blur(0)', opacity: 1 , y: 0, }}
         transition={{ duration: 1.2 }}
         className="text-lg mb-10 max-w-3xl mx-auto text-black"
       >
@@ -53,7 +53,7 @@ const LandingScroll = () => (
         className="
           grid place-items-center
           grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-          gap-8
+          gap-2
           mx-auto
         "
       >
@@ -62,7 +62,7 @@ const LandingScroll = () => (
             key={idx}
             className="
               flex flex-col items-center justify-between
-              w-72 h-[28rem] p-4 rounded-xl bg-black shadow-xl
+              w-72 h-[28rem] p-4 rounded-xl bg-gray-800 shadow-xl
             "
           >
             <img
@@ -75,16 +75,16 @@ const LandingScroll = () => (
               initial={{ filter: 'blur(5px)', opacity: 0 }}
               whileInView={{ filter: 'blur(0)', opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="text-xl font-semibold mt-6 text-white"
+              className="text-xl font-semibold text-white"
             >
               {title}
             </motion.h3>
 
             <motion.p
-              initial={{ filter: 'blur(8px)', opacity: 0, y: 20 }}
+              initial={{ filter: 'blur(5px)', opacity: 0, y: 20 }}
               whileInView={{ filter: 'blur(0)', opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="text-sm mt-2 text-center px-2 text-white"
+              transition={{ duration: 0.6 }}
+              className="text-sm text-center px-2 text-white"
             >
               {description}
             </motion.p>

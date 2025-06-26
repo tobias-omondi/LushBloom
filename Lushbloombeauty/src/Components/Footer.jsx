@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
     <div className='footer-section'>
-      <h1 className='text-white text-sm md:text-xl text-center md:w-2/3 md:mx-auto font-medium'>LushBloom is a beauty marketplace for vendors to sell their products online. Join our community and grow your brand with us.</h1>
+      <h1 className='text-white text-sm m-10 md:text-xl text-center md:w-2/3 md:mx-auto font-medium'>LushBloom is a beauty marketplace for vendors to sell their products online. Join our community and grow your brand with us.</h1>
     </div>
 
     {/* main footer container */}
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       {/* title for the page */}
-      <div className='text-white text-2xl text-start'>
+      <div className='text-white text-xl text-start'>
         <h2 className='text-gray-500'>LushBloom Beauty</h2>
         <div className='flex flex-col py-4 text-xl font-light '>
           <Link to='/' className='py-1'>Home</Link>

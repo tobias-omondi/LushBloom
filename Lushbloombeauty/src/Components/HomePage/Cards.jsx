@@ -20,7 +20,7 @@ const Cards = () => {
                 </div>
             ))}
         </div>
-        <PaymentCard />
+        {/* <PaymentCard /> */}
     </>
   )
 }

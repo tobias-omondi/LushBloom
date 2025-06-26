@@ -2,6 +2,10 @@ import React from 'react';
 import skincareproduct from '/src/assets/Beautiful black girl with shopping bags in a city _ Free Photo.jpeg';
 import Cards from './Cards';
 
+// import framer-motion
+
+import {motion} from 'framer-motion'
+
 const SectionThree = () => {
   return (
     <>
@@ -24,7 +28,12 @@ const SectionThree = () => {
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between h-full px-6 md:px-16 gap-10 p-10">
         {/* Text Section */}
-        <div className="text-center lg:text-left max-w-lg">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+              
+              className="text-center lg:text-left max-w-lg">
           <h1 className="text-white text-3xl md:text-5xl font-semibold leading-snug">
             Shop Online or In-Person
           </h1>
@@ -41,7 +50,7 @@ const SectionThree = () => {
               Buy Now
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Image Section */}
         <div className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] lg:w-[350px] lg:h-[450px] overflow-hidden rounded-3xl shadow-2xl border-4 border-white mt-10">
