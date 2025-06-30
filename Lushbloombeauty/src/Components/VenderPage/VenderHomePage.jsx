@@ -5,6 +5,8 @@ import backgroundimage from '/src/assets/vendorheroimage.jpg';
 import VenderSlider from './VendorSlider';
 import VenderSectionThree from './VenderSectionThree';
 import VenderSectionFour from './VenderSectionFour';
+import VenderDashLink from './VenderDashLink';
+import Footer from '../Footer';
 
 const VenderHomePage = () => {
   return (
@@ -44,6 +46,7 @@ const VenderHomePage = () => {
         </div>
       </div>
       <VenderSlider />
+
       <VenderSectionThree  
       title="Become a Vendor at LushBloom" 
       description={`
@@ -51,8 +54,18 @@ const VenderHomePage = () => {
         
         Join LushBloom today and start selling your products to a wider audience. Our easy-to-use platform allows you to manage listings, track sales, and showcase your brand to those who appreciate quality and creativity. Whether you're a seasoned florist or a budding artisan, LushBloom offers the tools and community you need to succeed. Grow your business with us and be part of a flourishing marketplace!
         `} />
-      <VenderSectionFour />
+      <VenderSectionFour  />
+
+      <VenderDashLink 
+        title = "Vender Dashboard"
+        description={`Welcome to your Vendor Dashboard! This is where you can manage your store, track sales, update product listings, and interact with your customers. Our easy-to-use platform helps you streamline your business, giving you more time to focus on growing your brand. With everything at your fingertips, you can stay on top of orders, promotions, and all the tools you need to succeed.
+
+          Take control of your business today and get started with managing your products, tracking your sales, and making the most out of your LushBloom vendor experience.`}/>
+
+      <Footer />
     </>
+
+
   );
 };
 
