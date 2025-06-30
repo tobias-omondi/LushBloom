@@ -4,11 +4,12 @@ import '../../App.css';
 import backgroundimage from '/src/assets/vendorheroimage.jpg';
 import VenderSlider from './VendorSlider';
 import VenderSectionThree from './VenderSectionThree';
+import VenderSectionFour from './VenderSectionFour';
 
 const VenderHomePage = () => {
   return (
     <>
-      <div className="relative w-full h-screen bg-white overflow-hidden -mt-24 md:-mt-24 shadow-xl p-10">
+      <div className="relative w-full h-screen bg-white overflow-hidden -mt-24 md:-mt-24 shadow p-10">
         {/* Navbar */}
         <div className='absolute top-4 md:top-0 left-0 w-full z-20 bg-black'>
           <Navbar />
@@ -50,7 +51,7 @@ const VenderHomePage = () => {
         
         Join LushBloom today and start selling your products to a wider audience. Our easy-to-use platform allows you to manage listings, track sales, and showcase your brand to those who appreciate quality and creativity. Whether you're a seasoned florist or a budding artisan, LushBloom offers the tools and community you need to succeed. Grow your business with us and be part of a flourishing marketplace!
         `} />
-        
+      <VenderSectionFour />
     </>
   );
 };
