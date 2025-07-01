@@ -23,7 +23,7 @@ const HeroPage = () => {
   return (
 
     <>
-    <div className=' relative w-full h-screen -mt-24 md:-mt-20'>
+    <div className=' relative w-full h-screen'>
 
       {/* for larger screen  */}
       <img src={backgroundimage} alt='Essential oil drop on hand' className="hidden sm:block absolute inset-0 w-full h-full object-cover brightness-50" />

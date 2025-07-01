@@ -22,6 +22,7 @@ const showOneSlides = [
 
 const VenderSectionFour = () => {
   return (
+    <>
     <div className="p-6">
       <Swiper
         spaceBetween={20}
@@ -39,8 +40,7 @@ const VenderSectionFour = () => {
               <img
                 src={slide.image}
                 alt={`Slide ${slide.id}`}
-                className="object-cover rounded-lg shadow-md"
-                style={{ width: "350px", height: "350px" }}
+                className="object-cover rounded-lg shadow-md w-4/5 h-[300px]"
               />
               <div className="flex flex-row gap-20 mt-4">
 
@@ -49,7 +49,7 @@ const VenderSectionFour = () => {
                 <FaStar size={20} className="text-orange-500" />
                 <FaStar size={20} className="text-orange-500" />
                 <FaStar size={20} className="text-orange-500" />
-                <FaStar size={20} />
+                <FaStar size={20} className='text-gray-400'/>
                 </div>
              
               <div>
@@ -63,6 +63,50 @@ const VenderSectionFour = () => {
         ))}
       </Swiper>
     </div>
+
+
+     {/* part two of slider */}
+    <div className="p-6">
+      <Swiper
+        spaceBetween={20}
+        slidesPerView={3}
+        loop={true}
+        autoplay={{
+          delay: 6000, // 3 seconds between slides
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+      >
+        {showOneSlides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div className="flex flex-col items-center">
+              <img
+                src={slide.image}
+                alt={`Slide ${slide.id}`}
+                className="object-cover rounded-lg shadow-md w-4/5 h-[300px]"
+              />
+              <div className="flex flex-row gap-20 mt-4">
+
+                <div className='flex flex-row'>
+                <FaStar size={20} className="text-orange-500" />
+                <FaStar size={20} className="text-orange-500" />
+                <FaStar size={20} className="text-orange-500" />
+                <FaStar size={20} className="text-orange-500" />
+                <FaStar size={20} className='text-gray-400'/>
+                </div>
+             
+              <div>
+              <FaHeart size={20} className="text-red-600" />
+              </div>
+
+              </div>
+            
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+    </>
   );
 };
 
