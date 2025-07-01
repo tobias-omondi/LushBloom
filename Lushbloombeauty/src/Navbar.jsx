@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className='flex md:hidden z-50'>
           <button 
             onClick={toggleMenu} 
-            className='text-blue-800 focus:outline-none transition-transform hover:scale-110'
+            className='text-blue-800  focus:outline-none transition-transform hover:scale-110'
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
           >

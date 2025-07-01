@@ -91,7 +91,7 @@ const VenderSectionFour = () => {
                 <FaStar size={20} className="text-orange-500" />
                 <FaStar size={20} className="text-orange-500" />
                 <FaStar size={20} className="text-orange-500" />
-                <FaStar size={20} className="text-orange-500" />
+                <FaStar size={20} className="text-gray-400"/>
                 <FaStar size={20} className='text-gray-400'/>
                 </div>
              

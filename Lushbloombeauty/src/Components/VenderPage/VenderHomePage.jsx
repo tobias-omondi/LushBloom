@@ -19,7 +19,7 @@ const VenderHomePage = () => {
         </header>
 
         {/* Hero Content */}
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 h-full flex flex-col md:flex-row items-center justify-between pt-32 md:pt-24 pb-16">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 h-full flex flex-col md:flex-row items-center justify-between pt-16 pt-2b-16">
           {/* Text Section */}
           <div className="w-full md:w-1/2 lg:w-2/5 mb-12 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -41,7 +41,7 @@ const VenderHomePage = () => {
             <img
               src={backgroundimage}
               alt="Vendor showcasing products"
-              className="w-full max-w-2xl rounded-lg shadow-xl object-cover"
+              className="w-full max-w-2xl rounded-lg  object-cover"
             />
           </div>
         </div>
