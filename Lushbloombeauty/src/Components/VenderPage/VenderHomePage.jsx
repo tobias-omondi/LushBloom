@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../../Navbar';
 import '../../App.css';
 import backgroundimage from '/src/assets/vendorheroimage.jpg';
-import VenderSlider from './VendorSlider';
 import VenderSectionThree from './VenderSectionThree';
 import VenderSectionFour from './VenderSectionFour';
 import VenderDashLink from './VenderDashLink';
@@ -12,7 +11,7 @@ const VenderHomePage = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen bg-white overflow-hidden">
+      <section className="relative w-full  bg-white overflow-hidden">
         {/* Navbar - Fixed at top */}
         <header className="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90">
           <Navbar />
@@ -22,18 +21,21 @@ const VenderHomePage = () => {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 h-full flex flex-col md:flex-row items-center justify-between pt-16 pt-2b-16">
           {/* Text Section */}
           <div className="w-full md:w-1/2 lg:w-2/5 mb-12 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-center md:text-start">
               Grow Your Brand with Us
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 mt-4 mb-8">
+            <p className="text-lg md:text-xl text-gray-700 mt-4 mb-8 text-center md:text-start">
               Join creators and artisans redefining beauty. Shine, sell, and grow with LushBloom.
             </p>
+
+            <div className='flex justify-center md:justify-start'>
             <button
               type="button"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg px-8 py-3 shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg px-8 py-3 shadow-lg transition-all duration-300 transform hover:scale-105 "
             >
               Start Selling
             </button>
+            </div>
           </div>
 
           {/* Image Section */}
@@ -47,8 +49,7 @@ const VenderHomePage = () => {
         </div>
       </section>
 
-      {/* Page Sections */}
-      <VenderSlider />
+      {/* Pages Sections */}
       <VenderSectionThree  
         title="Become a Vendor at LushBloom" 
         description={`

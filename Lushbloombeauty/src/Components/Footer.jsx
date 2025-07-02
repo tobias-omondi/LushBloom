@@ -14,7 +14,7 @@ const Footer = () => {
 
     {/* main footer container */}
 
-    <div className='bg-gray-950 p-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 '>
+    <div className='bg-black p-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 '>
       <div className='w-28 '>
         <img src='https://i.pinimg.com/736x/fa/0f/84/fa0f8436af0ae70e7a9fc41c1c90d353.jpg' alt='logo image' />
       </div>
