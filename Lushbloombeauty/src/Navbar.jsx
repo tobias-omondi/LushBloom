@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IoMdCart } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import './App.css';
@@ -51,14 +50,9 @@ const Navbar = () => {
         <ul className='hidden list-none md:flex md:flex-row justify-end gap-8 bg-black w-full rounded-2xl text-white font-medium items-center p-2 shadow'>
           <li><Link to="/" className='hover:text-gray-300 transition-colors py-2 px-1'>Home</Link></li>
           <li><Link to="/vendor-store" className='hover:text-gray-300 transition-colors py-2 px-1'>Vendor Store</Link></li>
-          <li><Link to="/help" className='hover:text-gray-300 transition-colors py-2 px-1'>Help</Link></li>
+          <li><Link to="/help" className='hover:text-gray-300 transition-colors py-2 px-1'>Help Center</Link></li>
           <li><Link to="/contact-us" className='hover:text-gray-300 transition-colors py-2 px-1'>Contact Us</Link></li>
           <li><Link to="/sign-in" className='hover:text-gray-300 transition-colors py-2 px-1'>Signin</Link></li>
-          <li>
-            <Link to="/cart" className='hover:text-gray-300 transition-colors flex items-center py-2 px-1'>
-              <IoMdCart size={20} />
-            </Link>
-          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -88,15 +82,9 @@ const Navbar = () => {
           '>
             <li><Link to="/" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Home</Link></li>
             <li><Link to="/vendor-store" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Vendor Store</Link></li>
-            <li><Link to="/help" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Help</Link></li>
+            <li><Link to="/help" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Help Center</Link></li>
             <li><Link to="/contact-us" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Contact Us</Link></li>
             <li><Link to="/sign-in" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Signin</Link></li>
-            <li>
-              <Link to="/cart" onClick={toggleMenu} className='hover:text-blue-300 transition-colors flex justify-center items-center py-3'>
-                <IoMdCart size={24} className="mr-2" />
-                Cart
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
