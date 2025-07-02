@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
 import { AiFillTikTok } from 'react-icons/ai';
 import { RiTwitterXFill } from 'react-icons/ri';
+import logo from '/src/assets/shopinglogo.webp'
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
 
     <div className='bg-black p-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10 '>
       <div className='w-28 '>
-        <img src='https://i.pinimg.com/736x/fa/0f/84/fa0f8436af0ae70e7a9fc41c1c90d353.jpg' alt='logo image' />
+        <img src={logo} alt='logo image' />
       </div>
 
       {/* title for the page */}
