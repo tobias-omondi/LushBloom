@@ -51,7 +51,6 @@ const Navbar = () => {
           <li><Link to="/" className='hover:text-gray-300 transition-colors py-2 px-1'>Home</Link></li>
           <li><Link to="/vendor-store" className='hover:text-gray-300 transition-colors py-2 px-1'>Vendor Store</Link></li>
           <li><Link to="/help" className='hover:text-gray-300 transition-colors py-2 px-1'>Help Center</Link></li>
-          <li><Link to="/contact-us" className='hover:text-gray-300 transition-colors py-2 px-1'>Contact Us</Link></li>
           <li><Link to="/sign-in" className='hover:text-gray-300 transition-colors py-2 px-1'>Signin</Link></li>
         </ul>
 
@@ -83,7 +82,6 @@ const Navbar = () => {
             <li><Link to="/" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Home</Link></li>
             <li><Link to="/vendor-store" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Vendor Store</Link></li>
             <li><Link to="/help" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Help Center</Link></li>
-            <li><Link to="/contact-us" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Contact Us</Link></li>
             <li><Link to="/sign-in" onClick={toggleMenu} className='hover:text-gray-300 transition-colors block py-3'>Signin</Link></li>
           </ul>
         </div>
