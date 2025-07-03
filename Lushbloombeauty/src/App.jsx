@@ -2,9 +2,9 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css'
 import Navbar from './Navbar'
 import Help from './Components/HelpPage/Help'
-import Signin from './Components/SigninPage/Signin'
 import HeroPage from './Components/HomePage/HeroPage'
 import VenderHomePage from './Components/VenderPage/VenderHomePage'
+import Signin from './Components/SigninPage/Signin'
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<HeroPage />}/>
           <Route path='/vendor-store' element={<VenderHomePage />}/>
           <Route path='/help' element={<Help />} />
-          <Route path='/Signin' element={<Signin />} />
+          <Route path='/signin' element={<Signin />} />
         </Routes>
         </Router>
       </div>
